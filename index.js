@@ -55,7 +55,6 @@ app.get("/pay", async function (req, res, next) {
     },
   };
 
-  // make base64 encoded payload
   let bufferObj = Buffer.from(JSON.stringify(normalPayLoad), "utf8");
   let base64EncodedPayload = bufferObj.toString("base64");
 
