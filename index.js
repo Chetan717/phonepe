@@ -14,7 +14,7 @@ const MERCHANT_ID = "PGTESTPAYUAT140";
 const PHONE_PE_HOST_URL = "https://api-preprod.phonepe.com/apis/pg-sandbox";
 const SALT_INDEX = 1;
 const SALT_KEY = "775765ff-824f-4cc4-9053-c3926e493514";
-const APP_BE_URL = "http://192.168.101.157:3002"; // our application
+const APP_BE_URL = "https://main.dmkezdlvzzrnm.amplifyapp.com"; // our application
 
 // setting up middleware
 app.use(cors());
