@@ -29,8 +29,8 @@ app.get("/", (req, res) => {
   res.send("PhonePe Integration APIs!");
 });
 app.get("/version", (req, res) => {
-  res.json({
-    version: "165",
+  res.send({
+    version: "1",
   });
 });
 
