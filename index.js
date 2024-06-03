@@ -10,11 +10,10 @@ const uniqid = require("uniqid");
 const app = express();
 
 // UAT environment
-const MERCHANT_ID = "PGTESTPAYUAT140";
-const PHONE_PE_HOST_URL = "https://api-preprod.phonepe.com/apis/pg-sandbox";
+const MERCHANT_ID = "M22UM7PRVEV8T";
+const PHONE_PE_HOST_URL = "https://api.phonepe.com/apis/hermes";
 const SALT_INDEX = 1;
-const SALT_KEY = "775765ff-824f-4cc4-9053-c3926e493514";
-const APP_BE_URL = "https://main.dmkezdlvzzrnm.amplifyapp.com"; // our application
+const SALT_KEY = "5d95f22d-b862-4589-8ba6-2ffb4f96bb32";
 
 // setting up middleware
 app.use(cors());
@@ -28,6 +27,11 @@ app.use(
 // Defining a test route
 app.get("/", (req, res) => {
   res.send("PhonePe Integration APIs!");
+});
+app.get("/version", (req, res) => {
+  res.json({
+    version: "165",
+  });
 });
 
 // endpoint to initiate a payment
