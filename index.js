@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 });
 app.get("/version", (req, res) => {
   res.send({
-    version: "1",
+    version: "4",
   });
 });
 
